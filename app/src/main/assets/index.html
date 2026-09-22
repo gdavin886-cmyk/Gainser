@@ -1,1 +1,76 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#6B4226"><title>Gainser</title><link rel="stylesheet" href="styles.css"></head><body><header><div class="brand"><span class="logo">G</span>Gainser</div><button id="themeBtn">☾</button></header><main><section class="hero"><p class="eyebrow">BROWN WEB EXPERIENCE</p><h1>Browse the web,<br><span>your way.</span></h1><p class="sub">A lightweight browser start page packaged for Android.</p><form id="searchForm"><input id="urlInput" autocomplete="off" placeholder="Search or enter a web address"><button>Go</button></form></section><section class="grid"><article><b>⌂</b><h2>Home</h2><p>Fast access to your browser start page.</p></article><article><b>✦</b><h2>Explore</h2><p>Open search results and websites from one place.</p></article><article><b>↓</b><h2>Downloads</h2><p>Use Android web downloads normally.</p></article></section><section class="quick"><h2>Quick links</h2><div class="links"><button data-url="https://www.google.com">Google</button><button data-url="https://www.youtube.com">YouTube</button><button data-url="https://github.com">GitHub</button><button data-url="https://wikipedia.org">Wikipedia</button></div></section></main><footer>Gainser • Android WebView Edition</footer><script src="app.js"></script></body></html>
+-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#6B4226"><title>Gainser</title><link rel="stylesheet" href="styles.css"></head><body><header><div class="brand"><span class="logo">G</span>Gainser</div><button id="themeBtn">☾</button></header><main><section class="hero"><p class="eyebrow">BROWN WEB EXPERIENCE</p><h1>Browse the web,<br><span>your way.</span></h1><p class="sub">A lightweight browser start page packaged for Android.</p><form id="searchForm"><input id="urlInput" autocomplete="off" placeholder="Search or enter a web address"><button>Go</button></form></section><section class="grid"><article><b>⌂</b><h2>Home</h2><p>Fast access to your browser start page.</p></article><article><b>✦</b><h2>Explore</h2><p>Open search results and websites from one place.</p></article><article><b>↓</b><h2>Downloads</h2><p>Use Android web downloads normally.</p></article></section><section class="quick"><h2>Quick links</h2><div class="links"><button data-url="https://www.google.com">Google</button><button data-url="https://www.youtube.com">YouTube</button><button data-url="https://github.com">GitHub</button><button data-url="https://wikipedia.org">Wikipedia</button></div></section></main><footer>Gainser • Android WebView Edition</footer><script src="app.js"></script></body></html>
++<!doctype html>
++<html lang="en">
++<head>
++  <meta charset="utf-8">
++  <meta name="viewport" content="width=device-width,initial-scale=1">
++  <meta name="theme-color" content="#f5f0ed">
++  <title>Gainser</title>
++  <link rel="stylesheet" href="styles.css">
++</head>
++<body>
++  <main class="app-shell">
++    <header class="topbar">
++      <a class="brand" href="#home" aria-label="Gainser home">
++        <span class="brand-mark">G</span>
++        <span>Gainser</span>
++      </a>
++      <button class="icon-button" id="themeBtn" type="button" aria-label="Switch to dark theme">☾</button>
++    </header>
++
++    <section class="welcome" id="home" aria-labelledby="welcomeTitle">
++      <p class="eyebrow">YOUR WEB, SIMPLIFIED</p>
++      <h1 id="welcomeTitle">Find your next<br><span>good idea.</span></h1>
++      <p class="intro">Search the web or jump back into a page. Gainser keeps the start of every browse feeling calm and focused.</p>
++    </section>
++
++    <form class="search-card" id="searchForm">
++      <label class="sr-only" for="urlInput">Search or enter a web address</label>
++      <span class="search-icon" aria-hidden="true">⌕</span>
++      <input id="urlInput" autocomplete="off" inputmode="url" placeholder="Search or enter web address">
++      <button type="submit">Go</button>
++    </form>
++
++    <section class="recent" aria-labelledby="recentTitle">
++      <div class="section-heading">
++        <div>
++          <p class="eyebrow">CONTINUE BROWSING</p>
++          <h2 id="recentTitle">Ready when you are</h2>
++        </div>
++        <span class="status"><i></i> Loading</span>
++      </div>
++
++      <div class="page-list" aria-label="Example loading pages">
++        <article class="page-row">
++          <span class="page-favicon">G</span>
++          <div class="page-copy">
++            <span class="skeleton skeleton-title"></span>
++            <span class="skeleton skeleton-url"></span>
++          </div>
++          <span class="row-action" aria-hidden="true">↗</span>
++        </article>
++        <article class="page-row">
++          <span class="page-favicon warm">✦</span>
++          <div class="page-copy">
++            <span class="skeleton skeleton-title wide"></span>
++            <span class="skeleton skeleton-url short"></span>
++          </div>
++          <span class="row-action" aria-hidden="true">↗</span>
++        </article>
++      </div>
++    </section>
++
++    <section class="quick" aria-labelledby="quickTitle">
++      <p class="eyebrow">GO SOMEWHERE</p>
++      <h2 id="quickTitle">Quick links</h2>
++      <div class="links">
++        <button type="button" data-url="https://www.google.com">Google <span>↗</span></button>
++        <button type="button" data-url="https://www.youtube.com">YouTube <span>↗</span></button>
++        <button type="button" data-url="https://github.com">GitHub <span>↗</span></button>
++        <button type="button" data-url="https://wikipedia.org">Wikipedia <span>↗</span></button>
++      </div>
++    </section>
++  </main>
++  <script src="app.js"></script>
++</body>
++</html>
